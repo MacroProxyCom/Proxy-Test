@@ -17,34 +17,6 @@ IP Address Masking: Check if the proxy is replacing your real IP with its own.
 Speed Assessment: Analyze the proxy’s impact on your browsing, downloading, or streaming speeds.
 Functionality Verification: Ensure the proxy correctly routes your internet traffic.
 
-# Steps to Verify Proxy Functionality
-Testing your proxy involves several steps to ensure it functions correctly. Here’s a detailed guide:
-
-Connectivity Check
-Use tools like curl or ping to confirm the proxy is accessible.
-
-curl -x http://your-proxy-address:port http://example.com
-IP Verification
-Visit services like whatismyip.com to see if your IP is displayed as the proxy's IP.
-
-curl -x http://your-proxy-address:port http://ifconfig.me
-Response Time Evaluation
-Measure the response time through the proxy and compare it to a direct connection.
-
-time curl -x http://your-proxy-address:port http://example.com
-Anonymity Check
-Use sites like ipleak.net to ensure your real IP isn't exposed.
-
-Protocol Support Verification
-Confirm that the proxy supports necessary protocols like HTTP, HTTPS, and SOCKS.
-
-curl --socks5 your-proxy-address:port http://example.com
-Traffic Monitoring
-If you manage the server, monitor logs to check if requests are routed correctly through the proxy.
-
-DNS Leak Test
-Use tools like dnsleaktest.com to ensure DNS requests are routed through the proxy for privacy.
-
 # Recommended Online Proxy Checkers
 WhatIsMyIP: Check your IP address to confirm it matches the proxy's assigned IP.
 Hide.me Proxy Checker: Test for IP masking and anonymity.
